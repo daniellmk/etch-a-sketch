@@ -1,0 +1,120 @@
+* {
+    font-family: system-ui, -apple-system;
+}
+
+/*Etch-A-Sketch*/
+#easContainer {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow:  30px  30px 60px #d9d9d9,
+                -30px -30px 60px #ffffff;
+}
+
+/*Controls*/
+p{
+    margin-bottom: 0px;
+}
+
+/*Layout*/
+#pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    margin-top: 20px;
+}
+
+#easContainer {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    background: #ffffff;
+    box-shadow: 30px  30px 60px #d9d9d9, 
+               -30px -30px 60px #ffffff;
+}
+
+#leftCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-right: 10px;
+}
+#leftCol, #rightCol {
+    width: 100px;
+}
+button {
+    display: block;
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    border: 0px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow:  5px  5px 10px #d9d9d9,
+                -5px -5px 10px #ffffff;
+    transition: 0.5s ease-in-out;
+}
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+/*Color Input*/
+input[type='color'] {
+    appearance: none;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+  
+  input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+  
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Dimensions Slider*/
+#slider {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    height: 7px;
+    background: #dcdcdc;
+}
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    border: 1px solid black;
+    background: #ffffff;
+    transition: transform 0.5s;
+}
+
+/*Anims*/
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    margin: 15px;
+}
+#slider::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s;
+}
+
