@@ -28,3 +28,11 @@ slider.addEventListener('input', function() {
 function updDimTxt(dimensions) {
     dimLabel.innerHTML = `${dimensions}x${dimensions}`
 }
+
+function drawMode() {
+
+}
+
+function eraseMode() {
+    
+}

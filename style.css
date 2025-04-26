@@ -21,8 +21,8 @@ button.active {
     color: white;
     box-shadow: inset  6px  6px 10px #3d3d3d,
                 inset -6px -6px 10px #535353;
-    transition: box-shadow 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out;
+    
+    transition: all 0.5s ease-in-out;
 }
 
 /*Layout*/
@@ -70,8 +70,7 @@ button {
     background: #ffffff;
     box-shadow:  5px  5px 10px #d9d9d9,
                 -5px -5px 10px #ffffff;
-    transition: box-shadow 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .grid-item {
