@@ -33,6 +33,7 @@ p{
 }
 
 #easContainer {
+    display: grid;
     width: 400px;
     height: 400px;
     margin: 5px;
@@ -62,6 +63,12 @@ button {
     box-shadow:  5px  5px 10px #d9d9d9,
                 -5px -5px 10px #ffffff;
     transition: 0.5s ease-in-out;
+}
+
+.grid-item {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #3d3d3d;
+    aspect-ratio: 1 / 1;
 }
 p {
     text-align: center;
