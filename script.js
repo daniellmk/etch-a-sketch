@@ -1,6 +1,10 @@
-const easCont = document.getElementById("easContainer")
-const dimLabel = document.getElementById("dimLabel")
+const easCont = document.getElementById("easContainer");
+const dimLabel = document.getElementById("dimLabel");
 const slider = document.getElementById("slider");
+const drawButton = document.getElementById("drawButton");
+const eraseButton = document.getElementById("eraseButton");
+const clearButton = document.getElementById("clearButton");
+let mode = "draw";
 let dimensions = slider.value;
 
 buildGrid()
@@ -29,10 +33,19 @@ function updDimTxt(dimensions) {
     dimLabel.innerHTML = `${dimensions}x${dimensions}`
 }
 
-function drawMode() {
 
+drawButton.addEventListener("click", drawMode);
+eraseButton.addEventListener("click", eraseMode);
+clearButton.addEventListener("click", buildGrid);
+
+function drawMode() {
+    mode = "draw"
+    eraseButton.classList.remove("active");
+    drawButton.classList.add("active");
 }
 
 function eraseMode() {
-    
+    mode = "erase"
+    drawButton.classList.remove("active");
+    eraseButton.classList.add("active");
 }
