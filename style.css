@@ -71,9 +71,7 @@ button {
 }
 
 .grid-item {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #3d3d3d;
-    aspect-ratio: 1 / 1;
+    background-color: white;
 }
 p {
     text-align: center;
